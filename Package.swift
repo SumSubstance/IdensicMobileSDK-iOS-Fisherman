@@ -3,12 +3,12 @@
 
 import PackageDescription
 
-let version = Version("1.44.0")
+let version = Version("1.45.0")
 
 let gitUrl = "https://maven.sumsub.com/repository/releases/IdensicMobileSDK-iOS/\(version)"
 
 enum checksums {
-    static let fisherman = "9170a80b3d7014f166d347c0010e6918e8c5037b7a133a56d287e66521f42b38"
+    static let fisherman = "51b8040af81cb5ca9d5bb2e5bdaf86e4f1ad986385360bfdfa8038776bee0945"
 }
 
 let package = Package(
@@ -26,7 +26,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/SumSubstance/IdensicMobileSDK-iOS.git", .exact(version)),
-        .package(url: "https://github.com/fingerprintjs/fingerprintjs-pro-ios", "2.11.0" ..< "3.0.0")
+        .package(url: "https://github.com/fingerprintjs/fingerprintjs-pro-ios", "2.15.1" ..< "3.0.0")
     ],
     targets: [
         .binaryTarget(
